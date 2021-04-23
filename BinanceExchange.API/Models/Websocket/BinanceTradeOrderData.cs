@@ -89,6 +89,9 @@ namespace BinanceExchange.API.Models.WebSocket
         [JsonProperty(PropertyName = "z")]
         public decimal AccumulatedQuantityOfFilledTradesThisOrder { get; set; }
 
+        [JsonProperty(PropertyName = "Z")]
+        public decimal CumulativeQuoteAssetTransactedQuantity { get; set; }
+
         [JsonProperty(PropertyName = "L")]
         public decimal PriceOfLastFilledTrade { get; set; }
 
