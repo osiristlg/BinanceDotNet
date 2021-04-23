@@ -211,7 +211,8 @@ namespace BinanceExchange.API.Websockets
                         }
                         break;
                     default:
-                        throw new ArgumentOutOfRangeException();
+                        //throw new ArgumentOutOfRangeException();  //TODO:  CLEAN UP - Outbound position
+                        break;
                 }
             };
             websocket.OnError += (sender, e) =>
